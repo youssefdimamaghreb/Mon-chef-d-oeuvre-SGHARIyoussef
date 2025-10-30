@@ -38,3 +38,39 @@ header {
     padding: 1rem 2rem;
     background-color: white;
 }
+/* Cibler toutes les sections */
+section {
+  padding: 2rem 0;              /* Espace vertical généreux */
+  border-top: 1px solid #ccc;   /* Séparation visuelle entre sections */
+}
+
+/* Optionnel : espacer le premier section du haut */
+section:first-of-type {
+  border-top: none;
+}
+/* Cibler tous les champs du formulaire */
+form input,
+form textarea {
+  width: 100%;                 /* Prennent toute la largeur disponible */
+  box-sizing: border-box;      /* Padding inclus dans la largeur */
+  padding: 10px;               /* Confort de saisie */
+  border: 1px solid #ccc;      /* Bordure discrète */
+  margin-bottom: 15px;         /* Espacement entre les champs */
+  border-radius: 4px;          /* Optionnel : coins arrondis */
+}
+
+/* Bouton d'envoi */
+form button {
+  background-color: #007BFF;   /* Couleur de fond visible */
+  color: white;                /* Texte blanc */
+  border: none;                /* Enlève la bordure par défaut */
+  padding: 10px 20px;          /* Espace intérieur */
+  cursor: pointer;             /* Indique que c'est cliquable */
+  border-radius: 4px;          /* Coins arrondis */
+  font-weight: bold;           /* Texte plus visible */
+}
+
+/* Effet au survol du bouton */
+form button:hover {
+  background-color: #0056b3;
+}
